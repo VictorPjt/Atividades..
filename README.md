@@ -36,9 +36,56 @@ else {
     
 }
 
+
+
+
+explicacao
+No exemplo a seguir demonstramos como programar uma estrutura condicional com algumas condicoes 
+
+//exemplo2
  
 
 
+semaforo = "verde";
+
+if (semaforo == "verde") {
+    mensagem = "Pode passar";
+}
+
+
+semaforo = "vermelho";
+
+if (semaforo == "verde") {
+    mensagem = "Pode passar";
+} else {
+    mensagem = "Pare";
+}
+
+semaforo = "amarelo";
+
+if (semaforo == "verde") {
+    mensagem = "Pode passar";
+} else if (semaforo == "vermelho") {
+    mensagem = "Pare";
+} else {
+    mensagem = "Atenção";
+}
+
+
+
+
+
+
+02
+explicacao
+
+Assim, a quantidade de comida necessária é fixada em 10, e o montante que o agricultor tem atualmente é fixado em 0. 
+Em cada iteração do ciclo, verificamos se a quantidade de alimento que o agricultor tem é igual à quantidade que ele precisa. 
+Se assim for, podemos sair do loop. Se não, o agricultor gasta mais uma hora coletando duas porções de comida, e o laço é executado novamente.
+ 
+
+
+02
 
 loop(food = 0; foodNeeded = 10) {
     if (food = foodNeeded) {
@@ -51,10 +98,40 @@ loop(food = 0; foodNeeded = 10) {
   }
 
 
-O Switch-case é uma estrutura de controle de fluxo, O funcionamento em si é o seguinte: A expressão dentro do switch é avaliada. Os case representam valores possíveis da expressão.
+
+exemplo 02 
+explicacao 
+
+ nesse exemplo é do tipo objeto, e cada característica do veículo corresponde a uma propriedade. Portanto,
+  a declaração do loop for/in solicita o acesso a cada característica dentro do objeto carro.
 
 
-While loop irá se repetir continuamente, e infinitamente, até a expressão dentro dos parênteses (), se torne falsa. Algo deve mudar a variável testada, ou o loop while nunca irá encerrar.
+  var carro = {modelo: 'A3 Sedan', marca: 'Audi', ano: 2020}
+
+  for (let caracteristica in carro){
+     
+      console.log(caracteristica + ": " + carro[caracteristica]);
+  }
+  
+  var saída:
+    modelo: A3 Sedan;
+    marca: Audi;
+    ano: 2020;
+ 
+
+
+
+3 Uma breve explicação sobre if, else if, else:
+O else if é utilizado em JavaScript para verificar múltiplas condições em uma sequência. 
+Se a primeira condição (if) for falsa, o JavaScript tentará a próxima condição (else if). Se nenhuma condição for verdadeira, portanto, ocódigo dentro do bloco else (se estiver presente) será executado.
+
+ex .. o Switch-case é uma estrutura de controle de fluxo, O funcionamento em si é o seguinte: A expressão dentro do switch é avaliada. Os case representam valores possíveis da expressão.
+
+
+4-While loop irá se repetir continuamente, e infinitamente, até a expressão dentro dos parênteses (), se torne falsa. Algo deve mudar a variável testada, ou o loop while nunca irá encerrar.
+No exemplo 2, temos um Array com uma lista de cores e precisamos saber o nome e valor de cada uma das suas propriedades.
+
+
 
 // 03
 

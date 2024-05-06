@@ -21,6 +21,8 @@
   // esse foi o codigo que eu fiz utilizando if , else if , else 
 
 
+//1
+
 if ( HoraDoDia >= 6 && HoraDoDia < 12){
     console.log ( "bom dia!!");
 
@@ -39,24 +41,71 @@ else {
     
 }
 
+//exemplo2
  
 
 
+semaforo = "verde";
+
+if (semaforo == "verde") {
+    mensagem = "Pode passar";
+}
+
+
+semaforo = "vermelho";
+
+if (semaforo == "verde") {
+    mensagem = "Pode passar";
+} else {
+    mensagem = "Pare";
+}
+
+semaforo = "amarelo";
+
+if (semaforo == "verde") {
+    mensagem = "Pode passar";
+} else if (semaforo == "vermelho") {
+    mensagem = "Pare";
+} else {
+    mensagem = "Atenção";
+}
+
+
+
+
+//02
 
 loop(food = 0; foodNeeded = 10) {
     if (food = foodNeeded) {
       exit loop;
-      // Nós temos comida o suficiente, Vamos para casa
+      console.log("Nós temos comida o suficiente, Vamos para casa")
     } else {
-      food += 2; // Passe uma hora coletando mais 2 alimentos(food)
-      // loop será executado novamente
+      food += 2; 
+     console.log( "Passe uma hora coletando mais 2 alimentos")(food)
+      console.log("loop será executado novamente")
     }
   }
 
 
-// 03
+  exemplo 2
 
-  //Switch-case exemplo
+
+  var carro = {modelo: 'A3 Sedan', marca: 'Audi', ano: 2020}
+
+  for (let caracteristica in carro){
+     
+      console.log(caracteristica + ": " + carro[caracteristica]);
+  }
+  
+  var saída:
+    modelo: A3 Sedan;
+    marca: Audi;
+    ano: 2020;
+ 
+
+
+
+//Switch-case exemplo 01
 const fruta = "morango";
 
 switch(fruta) {
@@ -76,17 +125,39 @@ switch(fruta) {
         console.log("Você não tem fruta que goste");
 }
 
+//exemplo 02
+sujeito = "feminino";
 
-//04
+switch (sujeito) {
+    case "feminino":
+        console.log("Bem-vinda!");
+        break;
+    case false:
+        console.log("Bem-vindo!");
+}
 
-//While loop exemplo
+
+//While loop exemplo 01
 let contador = 0;
 
-while (contador < 11) {
+while (contador < 6) {
   console.log('repetição nº ' + contador);
 
   contador++;
 }
 
+//exemplo 02
+//No exemplo abaixo temos um Array com uma lista de cores e precisamos saber o nome e valor de cada uma das suas propriedades.
+const cores = [
+  'Rosa',
+  'Preto',
+  'Azul',
+  'Branco'
+];
 
+let index = 0;
 
+while (index < cores.length) {
+  console.log(index, cores[index]);
+  index++;
+}
